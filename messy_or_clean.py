@@ -54,7 +54,7 @@ model.compile(optimizer = 'adam', loss='binary_crossentropy', metrics=['accuracy
 
 
 
-history= model.fit(train_gen, validation_data = test_gen, epochs=5, verbose=2)
+history= model.fit(train_gen, validation_data = test_gen, epochs=25, verbose=2)
 
 train_loss, train_acc = model.evaluate(train_gen)
 print("final train accuracy = {:.2f} , train loss = {:.2f}".format(train_acc*100, train_loss*100))
